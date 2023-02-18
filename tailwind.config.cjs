@@ -13,7 +13,14 @@ module.exports = {
       orange: "#F3A712",
       green: "#75D14A",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        "jost": ["Jost", "sans-serif"],
+        "roboto": ["Roboto", "sans-serif"],
+        "sfprodisplay": ["SF Pro Display", "sans-serif"],
+        "sfprotext": ["SF Pro Text", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 };
