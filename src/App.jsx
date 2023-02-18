@@ -10,8 +10,6 @@ function App() {
           <Route index element={<HomePage />} />
         </Route>
       </Routes>
-
-      <p>asdadssa</p>
     </div>
   );
 }
