@@ -4,7 +4,7 @@ export const HeaderTop = () => {
    
   return (
     <div className="flex justify-between">
-      <div className="text-xs flex-row flex justify-center items-center gap-7 text-gray-600">
+      <div className="text-xs flex-row flex justify-center items-center gap-7 text-gray-600 cursor-pointer">
           <span>Сервис</span>
           <span>Сотрудничество</span>
           <span>Заказать звонок</span>
@@ -92,8 +92,8 @@ export const HeaderTop = () => {
           </div>
       </div>
       <div>
-        <div className="flex text-xs items-center justify-center gap-2">
-          <span>+7 (800) 505-54-61</span>
+        <div className="flex items-center justify-center gap-2 cursor-pointer">
+          <span className="text-xs font-medium text-black">+7 (800) 505-54-61</span>
           <svg
             width="18"
             height="18"

@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       purple: "#6F73EE",
+      "purple-200": "#8185F9",
       black: "#282739",
       "gray-600": "#5D6C7B",
       "gray-200": "#EAEBED",
@@ -15,11 +16,11 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        "jost": ["Jost", "sans-serif"],
-        "roboto": ["Roboto", "sans-serif"],
-        "sfprodisplay": ["SF Pro Display", "sans-serif"],
-        "sfprotext": ["SF Pro Text", "sans-serif"]
-      }
+        jost: ["Jost", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        sfprodisplay: ["SF Pro Display", "sans-serif"],
+        sfprotext: ["SF Pro Text", "sans-serif"],
+      },
     },
   },
   plugins: [],
