@@ -32,7 +32,7 @@ export const Navbar = () => {
           <Icons.Balance className="hover:fill-purple" />
         </div>
         <div className="px-2 py-2 rounded-full cursor-pointer border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
-          <Icons.Like />
+          <Icons.Like className="hover:fill-purple"/>
         </div>
         <div className="flex items-center gap-2 font-medium cursor-pointer px-2 py-1 rounded-full border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
           <Icons.Shopp className="fill-purple" />
