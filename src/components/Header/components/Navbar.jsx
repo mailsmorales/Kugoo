@@ -4,7 +4,7 @@ import Icons from "../../../assets/image/icons";
 export const Navbar = () => {
   return (
     <div className="mt-10 flex items-center">
-      <div className="flex gap-8">
+      <div className="flex gap-8 items-center">
         <h1 className="font-bold text-3xl cursor-pointer">KUGOO</h1>
         <div className="flex justify-center items-center bg-purple px-4 py-2 gap-3 border-2 border-purple hover:border-purple-200 ease-in duration-300 rounded-md hover:bg-purple-200 cursor-pointer">
           <Icons.Line />
