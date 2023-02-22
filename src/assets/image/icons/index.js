@@ -9,6 +9,7 @@ import { ReactComponent as Plus } from "./plus.svg";
 import { ReactComponent as Viber } from "./viber.svg";
 import { ReactComponent as Whatsapp } from "./whatsapp.svg";
 import { ReactComponent as Telegram } from "./telegram.svg";
+import { ReactComponent as Percent } from "./percent.svg";
 
 export default {
   Balance,
@@ -22,4 +23,5 @@ export default {
   Viber,
   Whatsapp,
   Telegram,
+  Percent,
 };
