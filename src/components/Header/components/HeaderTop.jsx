@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Icons from "../../../assets/image/icons";
 
 export const HeaderTop = () => {
   return (
     <div className="flex justify-between">
       <div className="text-xs flex-row flex justify-center items-center gap-7 text-gray-600">
-        <span className="cursor-pointer hover:text-black">Сервис</span>
-        <span className="cursor-pointer hover:text-black">Сотрудничество</span>
-        <span className="cursor-pointer hover:text-black">Заказать звонок</span>
+        <Link className="hover:text-black">Сервис</Link>
+        <Link className="hover:text-black">Сотрудничество</Link>
+        <Link className="hover:text-black">Заказать звонок</Link>
         <div className="flex gap-2 cursor-pointer">
           <Icons.Viber/>
           <Icons.Whatsapp/>

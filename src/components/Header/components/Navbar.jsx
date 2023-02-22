@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Icons from "../../../assets/image/icons";
 
 export const Navbar = () => {
   return (
     <div className="mt-10 flex items-center">
       <div className="flex gap-8 items-center">
-        <h1 className="font-bold text-3xl cursor-pointer">KUGOO</h1>
+        <Link className="font-bold text-3xl cursor-pointer">KUGOO</Link>
         <div className="flex justify-center items-center bg-purple px-4 py-2 gap-3 border-2 border-purple hover:border-purple-200 ease-in duration-300 rounded-md hover:bg-purple-200 cursor-pointer">
           <Icons.Line />
           <button className="font-medium text-white">Каталог</button>
@@ -28,16 +29,22 @@ export const Navbar = () => {
         </div>
       </div>
       <div className=" ml-12 flex items-center gap-6">
-        <div className="px-2 py-2 rounded-full cursor-pointer border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
-          <Icons.Balance className="hover:fill-purple" />
-        </div>
-        <div className="px-2 py-2 rounded-full cursor-pointer border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
-          <Icons.Like className="hover:fill-purple"/>
-        </div>
-        <div className="flex items-center gap-2 font-medium cursor-pointer px-2 py-1 rounded-full border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
-          <Icons.Shopp className="fill-purple" />
-          Корзина
-        </div>
+        <Link>
+          <div className="px-2 py-2 rounded-full border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
+            <Icons.Balance className="hover:fill-purple" />
+          </div>
+        </Link>
+        <Link>
+          <div className="px-2 py-2 rounded-full border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
+            <Icons.Like className="hover:fill-purple" />
+          </div>
+        </Link>
+        <Link>
+          <div className="flex items-center gap-2 font-medium px-2 py-1 rounded-full border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
+            <Icons.Shopp className="fill-purple" />
+            Корзина
+          </div>
+        </Link>
       </div>
     </div>
   );
