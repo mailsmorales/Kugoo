@@ -16,10 +16,10 @@ export const CatalogItem = () => {
       </div>
       {(
         <div
-          className={`absolute left-0 top-13 bg-white px-3 py-3 shadow-xl rounded-md flex duration-300 ${
+          className={`absolute left-0 top-13 bg-white px-3 py-3 shadow-xl rounded-md flex duration-500 ${
             showCatalog
               ? " translate-y-0 opacity-1 visible"
-              : " -translate-y-1/2 opacity-0 invisible"
+              : " -translate-y-1 opacity-0 invisible"
           }`}
         >
           <div className="bg-bg rounded-md px-6 py-5 mr-10">
