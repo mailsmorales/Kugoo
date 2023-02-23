@@ -10,6 +10,11 @@ import { ReactComponent as Viber } from "./viber.svg";
 import { ReactComponent as Whatsapp } from "./whatsapp.svg";
 import { ReactComponent as Telegram } from "./telegram.svg";
 import { ReactComponent as Percent } from "./percent.svg";
+import { ReactComponent as Scooter } from "./scooter.svg";
+import { ReactComponent as Scooterr } from "./scooter-2.svg";
+import { ReactComponent as Bike } from "./bike.svg";
+import { ReactComponent as Scale } from "./scale.svg";
+import { ReactComponent as Cleaner } from "./cleaner.svg";
 
 export default {
   Balance,
@@ -24,4 +29,9 @@ export default {
   Whatsapp,
   Telegram,
   Percent,
+  Scooter,
+  Scooterr,
+  Bike,
+  Scale,
+  Cleaner,
 };

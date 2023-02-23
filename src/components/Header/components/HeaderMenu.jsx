@@ -36,7 +36,7 @@ export const HeaderMenu = () => {
       //     ? "px-2 py-px rounded-full border-2 border-gray flex items-center"
       //     : "items-center px-2"
       // }
-      // key={index}
+      key={index}
       // onClick={() => setActiveItem(index)}
     >
       {item.title}

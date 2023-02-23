@@ -1,16 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Icons from "../../../assets/image/icons";
+import { CatalogItem } from "./CatalogItem";
 
 export const Navbar = () => {
   return (
     <div className="mt-10 flex items-center">
       <div className="flex gap-8 items-center">
         <Link className="font-bold text-3xl cursor-pointer">KUGOO</Link>
-        <div className="flex justify-center items-center bg-purple px-4 py-2 gap-3 border-2 border-purple hover:border-purple-200 ease-in duration-300 rounded-md hover:bg-purple-200 cursor-pointer">
-          <Icons.Line />
-          <button className="font-medium text-white">Каталог</button>
-        </div>
+        <CatalogItem />
       </div>
       <div className="flex ml-5 rounded-md border-purple border-2  gap-5 items-center justify-between max-w-xl w-full">
         <div className="flex items-center">
