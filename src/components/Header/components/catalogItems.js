@@ -23,13 +23,13 @@ import Icons from "../../../assets/image/icons";
         titleType: "Городской",
         subItems: [
           {
-            title: "Для детей и подростков",
+            title: "Для  и подростков",
           },
           {
-            title: "Для взрослых",
+            title: "Для ",
           },
           {
-            title: "Для пенсионеров",
+            title: " пенсионеров",
           },
         ],
       },
