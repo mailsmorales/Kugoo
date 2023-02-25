@@ -9,6 +9,10 @@ import { ReactComponent as Plus } from "./plus.svg";
 import { ReactComponent as Viber } from "./viber.svg";
 import { ReactComponent as Whatsapp } from "./whatsapp.svg";
 import { ReactComponent as Telegram } from "./telegram.svg";
+import { ReactComponent as Gear } from "./gear.svg";
+import { ReactComponent as Guarantee } from "./guarantee.svg";
+import { ReactComponent as Location } from "./location.svg";
+import { ReactComponent as PlayButton} from "./playButton.svg"
 
 export default {
   Balance,
@@ -22,4 +26,8 @@ export default {
   Viber,
   Whatsapp,
   Telegram,
+  Gear,
+  Guarantee,
+  Location,
+  PlayButton
 };
