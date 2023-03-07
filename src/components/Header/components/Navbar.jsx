@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Icons from "../../../assets/image/icons";
+import { Basket } from "./Basket";
 import { CatalogItem } from "./CatalogItem";
 
 export const Navbar = () => {
+  const [showBasket, setShowBasket] = useState(false);
+  const basketRef = useRef();
+  document.addEventListener("click", (e) => {
+    if (!e.composedPath().includes(basketRef.current)) {
+      setShowBasket(false);
+    }
+  });
   return (
     <div className="mt-10 flex items-center">
       <div className="flex gap-8 items-center">
@@ -26,7 +34,7 @@ export const Navbar = () => {
           <Icons.Search />
         </div>
       </div>
-      <div className=" ml-12 flex items-center gap-6">
+      <div className="ml-12 flex items-center gap-6">
         <Link>
           <div className="px-2 py-2 rounded-full border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
             <Icons.Balance className="hover:fill-purple" />
@@ -37,12 +45,26 @@ export const Navbar = () => {
             <Icons.Like className="hover:fill-purple" />
           </div>
         </Link>
-        <Link>
-          <div className="flex items-center gap-2 font-medium px-2 py-1 rounded-full border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
-            <Icons.Shopp className="fill-purple" />
-            Корзина
+        <div ref={basketRef}>
+          <div className="relative">
+            <div
+              onClick={() => setShowBasket(!showBasket)}
+              className="flex items-center cursor-pointer gap-2 px-2 py-1 font-medium rounded-full border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300"
+            >
+              <Icons.Shopp className="fill-purple" />
+              Корзина
+            </div>
+            <div
+              className={`absolute right-0 top-10 bg-bg shadow-xl rounded-md flex duration-500 ${
+                showBasket
+                  ? "translate-y-0 opacity-1 visible"
+                  : "-translate-y-1 opacity-0 invisible"
+              }`}
+            >
+              <Basket />
+            </div>
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );

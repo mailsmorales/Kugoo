@@ -45,7 +45,7 @@ export const HeaderTop = () => {
             <Icons.Plus className=" hover:fill-gray-200 cursor-pointer" />
           </div>
           <div
-            className={`absolute w-60 right-0 top-5 bg-bg py-4 shadow-xl rounded-md flex duration-500 ${
+            className={`absolute w-60 right-0 top-5 bg-bg py-4 shadow-xl rounded-md flex duration-500 z-10 ${
               showContact
                 ? "translate-y-0 opacity-1 visible"
                 : "-translate-y-1 opacity-0 invisible"
