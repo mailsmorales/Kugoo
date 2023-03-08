@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Icons from "../../../assets/image/icons";
 
 export const HeaderTop = () => {
   const [showContact, setShowContact] = useState(false);
+  const contactRef = useRef();
+  document.addEventListener("click", (e) => {
+    if (!e.composedPath().includes(contactRef.current)) {
+      setShowContact(false);
+    }
+  });
   const contact = [
     {
       title: "Сервисный центр",
@@ -33,7 +39,7 @@ export const HeaderTop = () => {
           <Icons.Telegram />
         </div>
       </div>
-      <div>
+      <div ref={contactRef}>
         <div className="flex items-center justify-center gap-2 relative">
           <a
             className="text-xs font-medium text-black cursor-pointer"

@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Icons from "../../../assets/image/icons";
 import { catalogItems } from "./catalogItems";
 
@@ -8,8 +8,15 @@ export const CatalogItem = () => {
   const [selectedItem, setSelectedItem] = useState(0);
   const [selectedItems, setSelectedItems] = useState(0);
 
+  const cotalogtRef = useRef();
+  document.addEventListener("click", (e) => {
+    if (!e.composedPath().includes(cotalogtRef.current)) {
+      setShowCatalog(false);
+    }
+  });
+
   return (
-    <div className="relative">
+    <div ref={cotalogtRef} className="relative">
       <div
         onClick={() => setShowCatalog(!showCatalog)}
         className="flex justify-center items-center bg-purple px-4 py-2 gap-3 border-2 border-purple hover:border-purple-200 ease-in duration-300 rounded-md hover:bg-purple-200 cursor-pointer"
