@@ -28,7 +28,7 @@ export const HeaderTop = () => {
   ];
 
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between max-md:hidden">
       <div className="text-xs flex-row flex justify-center items-center gap-7 text-gray-600">
         <Link className="hover:text-black">Сервис</Link>
         <Link className="hover:text-black">Сотрудничество</Link>

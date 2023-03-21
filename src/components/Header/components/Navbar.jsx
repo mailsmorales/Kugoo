@@ -13,12 +13,12 @@ export const Navbar = () => {
     }
   });
   return (
-    <div className="mt-10 flex items-center justify-between">
+    <div className="mt-10 flex items-center justify-between max-md:mt-0 max-md:pb-12">
       <div className="flex gap-4 items-center mr-2">
         <Link className="font-bold text-3xl cursor-pointer">KUGOO</Link>
         <CatalogItem />
       </div>
-      <div className="flex rounded-md border-purple border-2 items-center justify-between max-w-xl w-full mr-2">
+      <div className="flex rounded-md border-purple border-2 items-center justify-between max-w-xl w-full mr-2 max-md:fixed max-md:top-[60px] max-md:w-[96%] max-md:max-w-none">
         <div className="flex items-center">
           <button className="flex justify-center items-center gap-1 bg-bg rounded-md py-1 px-3 m-1">
             Везде
@@ -34,7 +34,7 @@ export const Navbar = () => {
           <Icons.Search />
         </div>
       </div>
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 max-md:gap-3 max-lg:gap-3 max-sm:hidden">
         <Link>
           <div className="px-2 py-2 rounded-full border-2 border-gray-200 hover:bg-bg hover:border-bg ease-in duration-300">
             <Icons.Balance className="hover:fill-purple" />

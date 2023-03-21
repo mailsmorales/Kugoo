@@ -16,7 +16,7 @@ export const CatalogItem = () => {
   });
 
   return (
-    <div ref={cotalogtRef} className="relative">
+    <div ref={cotalogtRef} className="relative max-lg:hidden">
       <div
         onClick={() => setShowCatalog(!showCatalog)}
         className="flex justify-center items-center bg-purple px-4 py-2 gap-3 border-2 border-purple hover:border-purple-200 ease-in duration-300 rounded-md hover:bg-purple-200 cursor-pointer"

@@ -17,6 +17,7 @@ import { ReactComponent as Scale } from "./scale.svg";
 import { ReactComponent as Cleaner } from "./cleaner.svg";
 import { ReactComponent as ScooterItem } from "./scooter-3.svg";
 import { ReactComponent as Delete } from "./delete.svg";
+import { ReactComponent as Call } from "./call-2.svg";
 
 export default {
   Balance,
@@ -38,4 +39,5 @@ export default {
   Cleaner,
   ScooterItem,
   Delete,
+  Call,
 };

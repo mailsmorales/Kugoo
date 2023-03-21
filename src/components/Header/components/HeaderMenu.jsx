@@ -49,7 +49,7 @@ export const HeaderMenu = () => {
   ));
 
   return (
-    <div className="mt-9 bg-bg py-3">
+    <div className="mt-9 bg-bg py-3 max-lg:hidden">
       <div className="custom-container">
         <div className="flex gap-12">
         {menuList}

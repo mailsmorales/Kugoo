@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "580px",
+      md: "725px",
+      lg: "850px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     colors: {
       purple: "#6F73EE",
       "purple-200": "#8185F9",
