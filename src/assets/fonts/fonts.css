@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: "SF Pro Display"; 
+    src: url("./SFProDisplay/SFProDisplay-Regular.eot");
+    src: url("./SFProDisplay/SFProDisplay-Regular.woff") format("woff"),
+    url("./SFProDisplay/SFProDisplay-Regular.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: "SF Pro Text"; 
+    src: url("./SFProText/SFProText-Medium.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: 500; 
+}
+
+@font-face {
+    font-family: "SF Pro Text"; 
+    src: url("./SFProText/SFProText-Heavy.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: 900; 
+}
+
+@font-face {
+    font-family: "SF Pro Text"; 
+    src: url("./SFProText/SFProText-Semibold.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: 600; 
+}
